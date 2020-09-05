@@ -43,8 +43,8 @@ def log_in (city):
     driver.get("http://www.instagram.com")
     element_id = driver.find_element_by_name("username")
     element_pw = driver.find_element_by_name("password")
-    element_id.send_keys("dayoung4032@daum.net")
-    element_pw.send_keys("dhdnjf27dlf!")
+    element_id.send_keys(ID)
+    element_pw.send_keys(PW)
     driver.find_element_by_xpath("""//*[@id="react-root"]/section/main/article/div[2]/div[1]/div/form/div[4]/button""").click()
 
     element_target = driver.find_element_by_xpath("""//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input""") ## 검색창 접근
